@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/wolfamit/Elephant-newsRactjs/static/css/main.0a95e32d.css",
+    "main.js": "/wolfamit/Elephant-newsRactjs/static/js/main.89664db3.js",
+    "static/js/787.998b4c01.chunk.js": "/wolfamit/Elephant-newsRactjs/static/js/787.998b4c01.chunk.js",
+    "static/media/89.gif": "/wolfamit/Elephant-newsRactjs/static/media/89.00247aa867922bac5a44.gif",
+    "index.html": "/wolfamit/Elephant-newsRactjs/index.html",
+    "main.0a95e32d.css.map": "/wolfamit/Elephant-newsRactjs/static/css/main.0a95e32d.css.map",
+    "main.89664db3.js.map": "/wolfamit/Elephant-newsRactjs/static/js/main.89664db3.js.map",
+    "787.998b4c01.chunk.js.map": "/wolfamit/Elephant-newsRactjs/static/js/787.998b4c01.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a95e32d.css",
+    "static/js/main.89664db3.js"
+  ]
+}
