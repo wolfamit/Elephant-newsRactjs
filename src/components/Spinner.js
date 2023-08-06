@@ -1,0 +1,14 @@
+import React from 'react';
+import loading from '../assets/89.gif';
+
+
+
+const Spinner = () => {
+  return (
+    <div className='text-center my-4'>
+      <img src={loading}></img>
+    </div>
+  );
+};
+
+export default Spinner;
