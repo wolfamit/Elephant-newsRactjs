@@ -4,19 +4,17 @@ import NavBar from './components/NavBar';
 import News from './components/News';
 import Footer from './components/Footer';
 import LoadingBar from 'react-top-loading-bar'
-import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 
 
 
 const App = () => {
   const pagesize = 9;
-  // console.log();
   const apiKey = process.env.REACT_APP_KEY
   const [progress, setProgress] = useState(0)
 
   return( 
       <div>
-        <Router>
         <NavBar/>
         <LoadingBar
         color='#f11946'
@@ -24,7 +22,6 @@ const App = () => {
         height = {6}
         waitingTime	= {1000}
        />
-              
         <Routes>
           <Route exact path="/"  element={<News setProgress={setProgress}  key="general"  category='general' pagesize={pagesize} apiKey={apiKey} country="in" Key="general"/>}></Route>
           <Route exact path="/Business" element={<News setProgress={setProgress}  key="business" category='business'  pagesize={pagesize} apiKey={apiKey} country="in" Key="business"/>}></Route>
@@ -35,7 +32,6 @@ const App = () => {
           <Route exact path="/Sports" element={ <News setProgress={setProgress}  key="sports" category='sports'  pagesize={pagesize} apiKey={apiKey} country="in" Key="sports"/>}></Route>
           <Route exact path="/Technology" element={ <News setProgress={setProgress}  key="technology"  category='technology' pagesize={pagesize} apiKey={apiKey} country="in" Key="technology"/>}></Route>
         </Routes>
-      </Router>
       <Footer/>
     </div>
     
