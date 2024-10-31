@@ -1,14 +1,14 @@
 import React from 'react'
-import './NewsItem.css';
 import { Link } from "react-router-dom";
 import icon from '../assets/icon.png';
+import './NewsItem.css';
 
 const NavBar=() =>{
     return (
       <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary ">
         <div className="container-fluid">
 
-          <Link><img className='icon hide' exact to="/General" src={icon}></img></Link>
+          <Link><img className='icon hide' exact="true" to="/General" src={icon} alt='logo'/></Link>
         <Link className="navbar-brand" to="/General">NewsElephant</Link>
 
         <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
