@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import NewsItem from './NewsItem'
-// import Spinner from './Spinner';
+import Spinner from './Spinner';
 import './NewsItem.css'
 import InfiniteScroll from "react-infinite-scroll-component";
 
@@ -40,8 +40,6 @@ const News = (props) => {
   }, [props.category, updateNews]);
 
 
-
-
   const fetchMoreData = useCallback(async () => {
     setTimeout(async () => {
       const newPage = page + 1;
@@ -55,7 +53,7 @@ const News = (props) => {
         console.error("Failed to fetch more news:", error);
       }
     }, 1000); // Delay by 2 seconds
-  }, [page, props.country, props.category, props.apiKey, props.pagesize]);
+  }, [page, props.category]);
 
   return (
     <>
